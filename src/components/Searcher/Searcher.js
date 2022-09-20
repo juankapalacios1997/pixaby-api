@@ -16,23 +16,32 @@ class Searcher extends Component {
 
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
-                <div className="row">
-                    <div className="form-group col-md-8">
-                        <input
-                            ref={this.searchRef} 
-                            type="text" 
-                            className="form-control form-control-lg" 
-                            placeholder="Search your image. Example: Football" />
-                    </div>
-                    <div className="form-group col-md-4">
-                        <input 
-                            type="submit" 
-                            className="btn btn-lg btn-primary btn-block" 
-                            value="search" />
-                    </div>
+            <nav className="navbar navbar-expand-lg navbar-black bg-secondary">
+                <div className="container-fluid">
+                    <h1 className="text-primary" href="#">Image searcher</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form className="d-flex" onSubmit={this.handleSubmit}>
+                        <div className="row justify-content-center">
+                            <div className="form-group col-md-8">
+                                <input
+                                    ref={this.searchRef} 
+                                    type="text" 
+                                    className="form-control form-control-lg" 
+                                    placeholder="Search your image. Example: Football" />
+                            </div>
+                            <div className="form-group col-md-4">
+                                <input 
+                                    type="submit" 
+                                    className="btn btn-lg btn-warning btn-block" 
+                                    value="search" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </nav>
+           
         )
     }
 };

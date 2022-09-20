@@ -79,7 +79,6 @@ class App extends Component {
     return (
       <div className="app container">
         <div className="jumbotron">
-          <p className="lead text-center">Image searcher</p>
           <Searcher 
             searchTerm={this.searchTerm}
           />

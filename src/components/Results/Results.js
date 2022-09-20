@@ -22,10 +22,12 @@ class Results extends Component {
                         />
                     ))}
                 </div>
-                <Pages 
-                    previousPage={this.props.previousPage}
-                    nextPage={this.props.nextPage}                
-                />
+                <div className="justify-content-center">
+                    <Pages 
+                        previousPage={this.props.previousPage}
+                        nextPage={this.props.nextPage}                
+                    />
+                </div>     
             </div>
         )
     }

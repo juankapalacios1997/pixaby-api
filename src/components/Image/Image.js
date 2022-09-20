@@ -11,7 +11,7 @@ const Image = (props) => {
                 <div className="card-body">
                     <p className="card-text">{likes} Likes</p>
                     <p className="card-text">{views} Views</p>
-                    <a href={largeImageURL} target="_blank" className="btn btn-primary btn-block">View Image</a>
+                    <a href={largeImageURL} target="_blank" rel="noopener" className="btn btn-primary btn-block">View Image</a>
                 </div>
             </div>
         </div>

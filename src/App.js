@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Searcher from "./components/Searcher/Searcher";
 import Results from "./components/Results/Results";
-
+import key from "./key/key";
 
 class App extends Component {
 
@@ -55,7 +55,7 @@ class App extends Component {
   fetchApi = () => {
     const term = this.state.term;
     const page = this.state.page;
-    const url = `https://pixabay.com/api/?key=30046093-50bd26fbcd815f70eaf5c4afb&q=${term}&per_page=24&page=${page}`;
+    const url = `https://pixabay.com/api/?key=${key}&q=${term}&per_page=24&page=${page}`;
 
     //console.log(url)
 
